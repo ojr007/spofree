@@ -299,16 +299,16 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                         </button>
                     ))}
                     <div className="mt-auto text-xs text-[#535353] px-4 pb-2 hidden md:block">
-                        SpoFree v2.2
+                        2gmusic 1.0
                         <br/>
-                        Made by redretep
+                        Made by nandojr
                     </div>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1 flex flex-col min-h-0">
                     <div className="flex justify-between md:justify-end items-center p-4">
-                         <span className="md:hidden text-xs text-[#535353] font-mono">v2.2</span>
+                         <span className="md:hidden text-xs text-[#535353] font-mono">1.0</span>
                         <button onClick={onClose} className="p-2 hover:bg-[#282828] rounded-full transition-colors"><Check /></button>
                     </div>
                     <div className="flex-1 overflow-y-auto p-4 md:p-8 pt-0">

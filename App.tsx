@@ -15,7 +15,7 @@ import {
     getAlbumTracks, getArtistTopTracks, getPlaylistTracks, getArtistAlbums, downloadTrackBlob, downloadBlobWithProgress 
 } from './services/hifiService';
 import { storageService } from './services/storageService';
-import { ChevronLeft, ChevronRight, Search, Home, Library, Heart, Github, Pencil, Settings, Download, Archive, Loader2, Plus, Disc, Mic2, ListMusic, ArrowDownUp, LayoutGrid, List } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Search, Home, Library, Heart, Pencil, Settings, Download, Archive, Loader2, Plus, Disc, Mic2, ListMusic, ArrowDownUp, LayoutGrid, List } from 'lucide-react';
 import { Button } from './components/Button';
 import JSZip from 'jszip';
 
@@ -247,7 +247,7 @@ const App: React.FC = () => {
       if (updateTitle && currentTrack) {
           document.title = `${currentTrack.title} • ${currentTrack.artist.name}`;
       } else {
-          document.title = "SpoFree - High Fidelity Streaming";
+          document.title = "2gmusic - High Fidelity Streaming";
       }
   }, [currentTrack, updateTitle]);
 
@@ -836,9 +836,6 @@ const App: React.FC = () => {
              )}
           </div>
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="secondary" size="sm" onClick={() => window.open('https://github.com/redretep/spofree/tree/main', '_blank')} className="flex items-center gap-2">
-                <Github size={16} /><span>GitHub</span>
-            </Button>
           </div>
         </div>
         
